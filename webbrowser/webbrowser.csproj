@@ -7,8 +7,9 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{BAE16A77-B530-4A54-BCCD-667F84F2E789}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>webkit</RootNamespace>
+    <RootNamespace>webbrowser</RootNamespace>
     <AssemblyName>webkit</AssemblyName>
+    <newfilesearch>OnLoadAutoInsert</newfilesearch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>

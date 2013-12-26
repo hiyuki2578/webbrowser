@@ -42,12 +42,17 @@ public partial class MainWindow: Gtk.Window
 		try {
 			entry1.Text = webview.Uri.ToString();
 		}
-		catch 
+		catch
 		{
 		}
 	}
 	protected void url_go (object sender, EventArgs e)
 	{
-		webview.Open (entry1.Text);
+		string url=entry1.Text;
+		if (entry1.Text.StartsWith ("http://")==false)
+		{
+			url="http://" + url;
+		}
+		webview.Open (url);
 	}
 }
